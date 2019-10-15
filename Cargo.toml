@@ -1,0 +1,12 @@
+[package]
+name = "phy_numerical"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2018"
+license = "MIT"
+description = "some numericals"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
