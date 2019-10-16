@@ -2,7 +2,7 @@
 name = "phy_numerical"
 version = "0.1.2"
 authors = ["SyedUzairAhmed <syeduzair03@hotmail.com>"]
-edition = "2019"
+edition = "2018"
 license = "MIT"
 description = "some numericals"
 
