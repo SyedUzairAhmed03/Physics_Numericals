@@ -1,6 +1,7 @@
 #[warn(dead_code)]
 use std::io;
  pub fn First_equation_of_motion () {
+    loop {
         let mut x = String::new();
        
        println!("vf = vi + at");
@@ -223,10 +224,25 @@ press 2 for :km/hour");
            }else{
               println!("Err");
            }
-           
     }
+     let mut a = String::new();
+           println!("do you want to continue
+press 1 for :yes
+press 2 for : no
+");
+           io::stdin().read_line(&mut a);
+           let  a:i8 = a.trim().parse().unwrap();
+
+           if a == 1 {
+              println!("First equation of motion");
+           }else{
+              println!("thanks for using");
+              break
+           }
+  }
  }
  pub fn second_equation_of_motion () {
+    loop {
      let mut x = String::new();
        println!("s= vit + 1/2at^2 find");
        println!("plz press 1 for find : s or h");       
@@ -408,8 +424,24 @@ press 2 for :km/h");
               println!("Err");
         }
  }
+  let mut a = String::new();
+           println!("do you want to continue
+press 1 for :yes
+press 2 for : no
+");
+           io::stdin().read_line(&mut a);
+           let  a:i8 = a.trim().parse().unwrap();
+
+           if a == 1 {
+              println!("Second equation of motion");
+           }else{
+              println!("thanks for using");
+              break
+           }
+  }
 }
 pub fn third_equation_of_motion () {
+   loop{
      let mut x = String::new();
        println!("2as=vf^2-vi^2");
        println!("choose following number ");
@@ -539,4 +571,19 @@ press 2 for :km/h");
        println!("Err");
     }
     }
+     let mut a = String::new();
+           println!("do you want to continue
+press 1 for :yes
+press 2 for : no
+");
+           io::stdin().read_line(&mut a);
+           let  a:i8 = a.trim().parse().unwrap();
+
+           if a == 1 {
+              println!("Third equation of motion");
+           }else{
+              println!("thanks for using");
+              break
+           }
+  }
     }
