@@ -2,20 +2,20 @@ use std::io;
  pub fn First_equation_of_motion () {
         let mut x = String::new();
        
-       println!("vf = vi +at");
+       println!("vf = vi + at");
        println!("choose following number");
-       println!("1:vf");       
-       println!("2:vi");
-       println!("3:a");
-       println!("4:t");
+       println!("plz press 1 for find : vf");       
+       println!("plz press 2 for find : vi");
+       println!("plz press 3 for find : a");
+       println!("plz press 4 for find : t");
     io::stdin().read_line(&mut x);
        let  x:i8 = x.trim().parse().unwrap();
        if x == 1 {
 
            let mut g = String::new();
            println!("the value of vi is in ?
-1:m/sec
-2:km/hour");
+press 1 for :m/sec
+press 2 for :km/hour");
            io::stdin().read_line(&mut g);
            let  g:i8 = g.trim().parse().unwrap();
 
@@ -60,8 +60,8 @@ use std::io;
         }else if x == 2{
               let mut g = String::new();
            println!("the value of vf is in ?
-1:m/sec
-2:km/hour");
+press 1 for :m/sec
+press 2 for :km/hour");
            io::stdin().read_line(&mut g);
            let  g:i8 = g.trim().parse().unwrap();
 
@@ -124,8 +124,8 @@ use std::io;
     }else if x == 3 {
         let mut g = String::new();
            println!("the value of vi and vf is in ?
-1:m/sec
-2:km/hour");
+press 1 for :m/sec
+press 2 for :km/hour");
            io::stdin().read_line(&mut g);
            let  g:i8 = g.trim().parse().unwrap();
 
@@ -175,8 +175,8 @@ use std::io;
     }else if x == 4 {
                  let mut g = String::new();
            println!("the value of vi and vf is in ?
-1:m/sec
-2:km/hour");
+press 1 for :m/sec
+press 2 for :km/hour");
            io::stdin().read_line(&mut g);
            let  g:i8 = g.trim().parse().unwrap();
 
@@ -228,17 +228,17 @@ use std::io;
  pub fn second_equation_of_motion () {
      let mut x = String::new();
        println!("s= vit + 1/2at^2 find");
-       println!("1:s or h");       
-       println!("2:vi");
-       println!("3:a or g");
+       println!("plz press 1 for find : s or h");       
+       println!("plz press 2 for find : vi");
+       println!("plz press 3 for find : a or g");
     io::stdin().read_line(&mut x);
        let  x:i8 = x.trim().parse().unwrap();
        if x == 1 {
 
            let mut g = String::new();
            println!("the value of vi is in ?
-1:m/sec
-2:km/hour");
+press 1 for :m/sec
+press 2 for :km/hour");
            io::stdin().read_line(&mut g);
            let  g:u8 = g.trim().parse().unwrap();
 
@@ -293,8 +293,8 @@ use std::io;
 
            let mut g = String::new();
            println!("the value of s or h and is in ?
-1:m
-2:km");
+press 1 for :m
+press 2 for :km");
            io::stdin().read_line(&mut g);
            let  g:u8 = g.trim().parse().unwrap();
 
@@ -350,8 +350,8 @@ use std::io;
        
            let mut g = String::new();
            println!("the value of and vi is in ?
-1:m/sec
-2:km/h");
+press 1 for :m/sec
+press 2 for :km/h");
            io::stdin().read_line(&mut g);
            let  g:u8 = g.trim().parse().unwrap();
 
@@ -411,15 +411,16 @@ use std::io;
 pub fn third_equation_of_motion () {
      let mut x = String::new();
        println!("2as=vf^2-vi^2");
-       println!("1:a");       
-       println!("2:s");
+       println!("choose following number ");
+       println!("plz press 1 for find : a");       
+       println!("plz press 2 for find : s");
     io::stdin().read_line(&mut x);
        let  x:u8 = x.trim().parse().unwrap();
     if x == 1{
        let mut g = String::new();
            println!("the value of vf and vi is in ?
-1:m/sec
-2:km/h");
+press 1 for :m/sec
+press 2 for :km/h");
            io::stdin().read_line(&mut g);
            let  g:u8 = g.trim().parse().unwrap();
 
@@ -479,8 +480,8 @@ pub fn third_equation_of_motion () {
     }else if x == 2 {
               let mut g = String::new();
            println!("the value of vf and vi is in ?
-1:m/sec
-2:km/h");
+press 1 for :m/sec
+press 2 for :km/h");
            io::stdin().read_line(&mut g);
            let  g:u8 = g.trim().parse().unwrap();
 
