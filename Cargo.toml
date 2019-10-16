@@ -1,8 +1,8 @@
 [package]
 name = "phy_numerical"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["SyedUzairAhmed <syeduzair03@hotmail.com>"]
-edition = "2018"
+edition = "2019"
 license = "MIT"
 description = "some numericals"
 
