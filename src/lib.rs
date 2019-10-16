@@ -1,3 +1,4 @@
+#[warn(dead_code)]
 use std::io;
  pub fn First_equation_of_motion () {
         let mut x = String::new();
