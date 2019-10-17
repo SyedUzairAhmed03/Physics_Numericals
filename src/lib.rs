@@ -1,3 +1,4 @@
+use std::f64;
 use std::io;
 #[warn(dead_code)]
  pub fn First_equation_of_motion () {
@@ -241,7 +242,7 @@ press 2 for : no
            }
   }
  }
- pub fn second_equation_of_motion () {
+ pub fn Second_equation_of_motion () {
     loop {
      let mut x = String::new();
        println!("s= vit + 1/2at^2 find");
@@ -440,13 +441,15 @@ press 2 for : no
            }
   }
 }
-pub fn third_equation_of_motion () {
+pub fn Third_equation_of_motion () {
    loop{
      let mut x = String::new();
        println!("2as=vf^2-vi^2");
        println!("choose following number ");
        println!("plz press 1 for find : a");       
        println!("plz press 2 for find : s");
+       println!("plz press 3 for find : vf");
+       println!("plz press 4 for find : vi");
     io::stdin().read_line(&mut x);
        let  x:u8 = x.trim().parse().unwrap();
     if x == 1{
@@ -570,12 +573,119 @@ press 2 for :km/h");
     }else{
        println!("Err");
     }
+    }else if x == 3{
+       let mut g = String::new();
+           println!("the value of vi is in ?
+press 1 for :m/sec
+press 2 for :km/h");
+           io::stdin().read_line(&mut g);
+           let  g:u8 = g.trim().parse().unwrap();
+           if g == 1{
+              let mut s = String::new();
+           println!("enter the vaue of s ");
+           io::stdin().read_line(&mut s);
+           let  s:f64 = s.trim().parse().unwrap();
+
+           let mut a = String::new();
+           println!("enter the vaue of a ");
+           io::stdin().read_line(&mut a);
+           let  a:f64 = a.trim().parse().unwrap();
+
+           println!("enter the value of vi");
+           let mut vi = String::new();
+           io::stdin().read_line(&mut vi);
+           let  vi:f64 = vi.trim().parse().unwrap();
+           let o = 2.0*s*a;
+           let k = vi*vi;
+           let q:f64=o-k;
+           println!("{}",q.sqrt());
+           }else if g == 2{
+
+        let mut s = String::new();
+           println!("enter the vaue of 's' in 'm' if 's' value is in km 
+      add three zero in the last");
+           io::stdin().read_line(&mut s);
+           let  s:f64 = s.trim().parse().unwrap();
+
+           println!("enter the value of vi in km/h");
+           let mut vi = String::new();
+           io::stdin().read_line(&mut vi);
+           let  vi:f64 = vi.trim().parse().unwrap();
+
+           let d:f64 = vi*1000.00;
+           let d=d/3600.00;
+           let d=d*d;
+
+           let mut a = String::new();
+           println!("enter the vaue of a ");
+           io::stdin().read_line(&mut a);
+           let  a:f64 = a.trim().parse().unwrap();
+
+           let o = 2.0*s*a;
+           let q:f64=o-d;
+           println!("vf = {} m/s",q.sqrt());
+           }else{
+              println!("Err");
+           }
+    }else if x == 4{
+       let mut g = String::new();
+           println!("the value of vf is in ?
+press 1 for :m/sec
+press 2 for :km/h");
+           io::stdin().read_line(&mut g);
+           let  g:u8 = g.trim().parse().unwrap();
+           if g == 1{
+              let mut s = String::new();
+           println!("enter the vaue of s ");
+           io::stdin().read_line(&mut s);
+           let  s:f64 = s.trim().parse().unwrap();
+
+           let mut a = String::new();
+           println!("enter the vaue of a ");
+           io::stdin().read_line(&mut a);
+           let  a:f64 = a.trim().parse().unwrap();
+
+           println!("enter the value of vf");
+           let mut vf = String::new();
+           io::stdin().read_line(&mut vf);
+           let  vf:f64 = vf.trim().parse().unwrap();
+           let o = 2.0*s*a;
+           let k = vf*vf;
+           let q:f64=o-k;
+           println!("{}",q.sqrt());
+           }else if g == 2{
+
+        let mut s = String::new();
+           println!("enter the vaue of 's' in 'm' if 's' value is in km 
+      add three zero in the last");
+           io::stdin().read_line(&mut s);
+           let  s:f64 = s.trim().parse().unwrap();
+
+           println!("enter the value of vf in km/h");
+           let mut vf = String::new();
+           io::stdin().read_line(&mut vf);
+           let  vf:f64 = vf.trim().parse().unwrap();
+
+           let d:f64 = vf*1000.00;
+           let d=d/3600.00;
+           let d=d*d;
+
+           let mut a = String::new();
+           println!("enter the vaue of a ");
+           io::stdin().read_line(&mut a);
+           let  a:f64 = a.trim().parse().unwrap();
+
+           let o = 2.0*s*a;
+           let q:f64=o-d;
+           println!("vi = {} m/s",q.sqrt());
+           }else{
+              println!("Err");
+           }
     }
      let mut a = String::new();
            println!("do you want to continue
 press 1 for :yes
-press 2 for : no
-");
+press 2 for : no");
            io::stdin().read_line(&mut a);
            let  a:i8 = a.trim().parse().unwrap();
 
