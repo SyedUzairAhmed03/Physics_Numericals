@@ -3,6 +3,7 @@ name = "phy_numerical"
 version = "0.1.3"
 authors = ["SyedUzairAhmed <syeduzair03@hotmail.com>"]
 edition = "2018"
+repository = "https://github.com/SyedUzairAhmed03/Physics_Numericals"
 license = "MIT"
 description = "some numericals you can call function by typing phy_numerical::First_equation_of_motion() for first equation of motion. phy_numerical::Second_equation_of_motion() for second equation of motion. phy_numerical::Third_equation_of_motion() for third equation of motion"
 
