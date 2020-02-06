@@ -1,6 +1,6 @@
 use std::f64;
 use std::io;
-#[warn(dead_code)]
+#[allow(unused)]
  pub fn First_equation_of_motion () {
     loop {
         let mut x = String::new();
@@ -242,6 +242,7 @@ press 2 for : no
            }
   }
  }
+ #[allow(unused)]
  pub fn Second_equation_of_motion () {
     loop {
      let mut x = String::new();
@@ -441,6 +442,7 @@ press 2 for : no
            }
   }
 }
+#[allow(unused)]
 pub fn Third_equation_of_motion () {
    loop{
      let mut x = String::new();
