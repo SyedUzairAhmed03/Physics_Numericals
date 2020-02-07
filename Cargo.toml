@@ -1,13 +1,19 @@
 [package]
-name = "phy_numerical"
+name = "Phy_numerical"
 version = "0.1.4"
 authors = ["SyedUzairAhmed <syeduzair03@hotmail.com>"]
 edition = "2018"
 license = "MIT"
 repository = "https://github.com/SyedUzairAhmed03/Physics_Numericals"
-description = "some numericals you can call function by typing phy_numerical::First_equation_of_motion() for first equation of motion. phy_numerical::Second_equation_of_motion() for second equation of motion. phy_numerical::Third_equation_of_motion() for third equation of motion"
+homepage = "https://github.com/SyedUzairAhmed03/Physics_Numericals"
+readme = "README.md"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+[lib]
+
+name = "Phy_numerical"
+
+path = "/home/syed/Desktop/Phy_numerical/src/lib.rs"

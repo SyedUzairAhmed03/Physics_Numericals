@@ -1,13 +1,16 @@
 use std::f64;
+#[allow(unused_imports)]
 use std::io;
 #[allow(unused)]
+#[allow(non_snake_case)]
  pub fn First_equation_of_motion () {
     loop {
+       
         let mut x = String::new();
        
        println!("vf = vi + at");
        println!("choose following number");
-       println!("plz press 1 for find : vf");       
+       println!("plz press 1 for find : vf");        
        println!("plz press 2 for find : vi");
        println!("plz press 3 for find : a");
        println!("plz press 4 for find : t");
@@ -223,9 +226,14 @@ press 2 for :km/hour");
            println!("t = {}sec",(k-d)/(a));
 
            }else{
-              println!("Err");
+              println!("Pls Enter the right value");
+              continue;
            }
-    }
+         }else{
+            println!("Pls Enter the right value");
+              continue;
+         }
+    
      let mut a = String::new();
            println!("do you want to continue
 press 1 for :yes
@@ -243,6 +251,7 @@ press 2 for : no
   }
  }
  #[allow(unused)]
+ #[allow(non_snake_case)]
  pub fn Second_equation_of_motion () {
     loop {
      let mut x = String::new();
@@ -443,6 +452,7 @@ press 2 for : no
   }
 }
 #[allow(unused)]
+#[allow(non_snake_case)]
 pub fn Third_equation_of_motion () {
    loop{
      let mut x = String::new();

@@ -1,6 +1,8 @@
 use std::io;
-mod lib;
-#[allow(dead_code)]
+#[allow(non_snake_case)]
+
+extern crate Phy_numerical;
+
 fn main () {
-    lib::Third_equation_of_motion();
+    Phy_numerical::First_equation_of_motion();
 }
