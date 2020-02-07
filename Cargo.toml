@@ -7,7 +7,7 @@ license = "MIT"
 repository = "https://github.com/SyedUzairAhmed03/Physics_Numericals"
 homepage = "https://github.com/SyedUzairAhmed03/Physics_Numericals"
 readme = "README.md"
-
+discription = "Some functions for solving Physics-Physics_Numericals related to first,second & third equation of motion"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
