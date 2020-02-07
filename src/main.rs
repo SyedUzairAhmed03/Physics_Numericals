@@ -1,8 +1,8 @@
 use std::io;
 #[allow(non_snake_case)]
 
-extern crate Phy_numerical;
+extern crate phy_numerical;
 
 fn main () {
-    Phy_numerical::First_equation_of_motion();
+    phy_numerical::First_equation_of_motion();
 }

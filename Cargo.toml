@@ -1,5 +1,5 @@
 [package]
-name = "Phy_numerical"
+name = "phy_numerical"
 version = "0.1.4"
 authors = ["SyedUzairAhmed <syeduzair03@hotmail.com>"]
 edition = "2018"
@@ -14,6 +14,6 @@ description = "Some functions for solving Physics-Physics_Numericals related to 
 [dependencies]
 [lib]
 
-name = "Phy_numerical"
+name = "phy_numerical"
 
 path = "/home/syed/Desktop/Phy_numerical/src/lib.rs"

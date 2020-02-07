@@ -16,44 +16,44 @@ You just write **phy_numerical::First_equation_of_motion();** in Main.rs File li
 ```Rust
 use std::io;
 
-extern  crate Phy_numerical;
+extern  crate phy_numerical;
 
 fn main () {
 
 //For First equation of motion
 
-Phy_numerical::First_equation_of_motion();
+phy_numerical::First_equation_of_motion();
 
 }
 ```
 - For **Second Equation of motion**.
-You write **Phy_numerical::Second_equation_of_motion();** in Main.rs File like this 
+You write **phy_numerical::Second_equation_of_motion();** in Main.rs File like this 
 ```Rust
 use std::io;
 
-extern  crate Phy_numerical;
+extern  crate phy_numerical;
 
 fn main () {
 
 //For Second equation of motion
 
-Phy_numerical::Second_equation_of_motion();
+phy_numerical::Second_equation_of_motion();
 
 }
 ```
 > **Note** : You cannot find time in second Equation of Motion Because it is impossible to separate *t* on the right side of equation.
 - For **Third Equation of motion**.
-You write **Phy_numerical::Third_equation_of_motion();** in Main.rs File like this 
+You write **phy_numerical::Third_equation_of_motion();** in Main.rs File like this 
 ```Rust
 use std::io;
 
-extern  crate Phy_numerical;
+extern  crate phy_numerical;
 
 fn main () {
 
 //For Third equation of motion
 
-Phy_numerical::Third_equation_of_motion();
+phy_numerical::Third_equation_of_motion();
 
 }
 ```
